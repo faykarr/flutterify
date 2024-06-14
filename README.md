@@ -19,6 +19,4 @@ This project is for assignment purpose. It is a simple Flutter project that uses
 3. Run `flutter run`
 
 ## Screenshots
-
-![Splash Screen Portrait](assets\screens\splash_screen-portrait.png)
-![Splash Screen Landscape](assets\screens\splash_screen-landscape.png)
+<img src="assets/screens/splash_screen-portrait.png" width="250">
