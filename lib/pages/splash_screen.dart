@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterify/pages/sign_in.dart';
 import 'package:flutterify/utils/constant.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -87,16 +88,23 @@ class SplashScreen extends StatelessWidget {
                       ),
                       child: ElevatedButton(
                         onPressed: () {
-                          // Add your desired functionality here
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SignIn(),
+                            ),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                           foregroundColor: Colors.transparent,
                           backgroundColor: Colors.transparent,
-                          shadowColor: Colors.transparent, // No shadow directly from the button
+                          shadowColor: Colors
+                              .transparent, // No shadow directly from the button
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          padding: EdgeInsets.zero, // Remove padding so the container's padding is used
+                          padding: EdgeInsets
+                              .zero, // Remove padding so the container's padding is used
                         ),
                         child: Ink(
                           decoration: BoxDecoration(

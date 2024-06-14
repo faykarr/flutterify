@@ -20,3 +20,4 @@ This project is for assignment purpose. It is a simple Flutter project that uses
 
 ## Screenshots
 <img src="assets/screens/splash_screen-portrait.png" width="250">
+<img src="assets/screens/sign_in-portrait.png" width="250">
