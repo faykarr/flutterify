@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "681133255941",
+    "project_id": "fluttterify",
+    "storage_bucket": "fluttterify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681133255941:android:e35922f3fbc73522dbdb6c",
+        "android_client_info": {
+          "package_name": "com.example.flutterify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj9iEkHEBOSqt5GnBFSPkkDwiq9bRgWeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
