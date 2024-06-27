@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutterify/pages/sign_up.dart';
+import 'package:flutterify/pages/sign_in.dart';
 import 'package:flutterify/utils/constant.dart';
 
-class SignIn extends StatefulWidget {
-  const SignIn({super.key});
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
 
   @override
-  State<SignIn> createState() => _SignInState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _SignInState extends State<SignIn> {
+class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     // Variable for get the size of screen
@@ -32,7 +32,7 @@ class _SignInState extends State<SignIn> {
             children: [
               SizedBox(height: size.height * 0.1),
               Text(
-                'Hello Again!',
+                'Welcome!',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -42,11 +42,12 @@ class _SignInState extends State<SignIn> {
               ),
               const SizedBox(height: 35),
               Text(
-                'Welcome back! Please login to\n your account.',
+                'Fill the form below to create\n your account.',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 18, color: textColor2, height: 1.2),
               ),
               SizedBox(height: size.height * 0.05),
+              textField("Full Name", Colors.white),
               textField("Email", Colors.white),
               textField("Password", Colors.black12),
               const SizedBox(height: 20),
@@ -110,73 +111,8 @@ class _SignInState extends State<SignIn> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                    height: 2,
-                    width: size.width * 0.2,
-                    color: Colors.black12,
-                  ),
                   Text(
-                    '  Or continue with  ',
-                    style: TextStyle(
-                      color: textColor2,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Container(
-                    height: 2,
-                    width: size.width * 0.2,
-                    color: Colors.black12,
-                  )
-                ],
-              ),
-              SizedBox(height: size.height * 0.05),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black12.withOpacity(0.05),
-                        spreadRadius: 1,
-                        blurRadius: 7,
-                        offset: const Offset(0, -1),
-                      ),
-                    ],
-                  ),
-                  child: ElevatedButton.icon(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.transparent,
-                      backgroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 15),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                    ),
-                    icon: Image.asset(
-                      'assets/icons/google-96.png',
-                      height: 30,
-                    ),
-                    label: Text(
-                      'Google Account',
-                      style: TextStyle(
-                        color: textColor2,
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: size.height * 0.05),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Don\'t have an account? ',
+                    'Already have an account? ',
                     style: TextStyle(
                       color: textColor2,
                       fontSize: 16,
@@ -189,12 +125,12 @@ class _SignInState extends State<SignIn> {
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const SignUp(),
+                          builder: (context) => const SignIn(),
                         ),
                       );
                     },
                     child: const Text(
-                      'Sign Up',
+                      'Sign In',
                       style: TextStyle(
                         color: primaryColor,
                         fontSize: 16,
